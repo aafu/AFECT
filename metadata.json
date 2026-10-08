@@ -1,0 +1,6 @@
+{
+  "name": "ระบบทะเบียนสมาชิกสมาคมเพื่อการศึกษาและวัฒนธรรมชาวอ่าข่า",
+  "description": "ระบบรับสมัคร บริหารจัดการ และรายงานข้อมูลสมาชิกสมาคมเพื่อการศึกษาและวัฒนธรรมชาวอ่าข่า เชื่อมต่อ Google Sheets",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
