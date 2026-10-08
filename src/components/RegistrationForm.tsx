@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Member, MemberType, Gender } from '../types/member';
 import { calculateAge, validateThaiNationalId, compressImageTo2InchDataUrl } from '../services/storage';
+import { THAILAND_PROVINCES, THAILAND_REGIONS } from '../data/thailandProvinces';
 import { AssociationLogo } from './AssociationLogo';
 import { 
   UserPlus, 
@@ -869,10 +870,13 @@ export const RegistrationForm: React.FC<RegistrationFormProps> = ({
                 onChange={(e) => setProvince(e.target.value)}
                 className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-200 focus:border-emerald-600 bg-white"
               >
-                {NORTHERN_PROVINCES.map((p) => (
-                  <option key={p} value={p}>{p}</option>
+                {THAILAND_REGIONS.map((reg) => (
+                  <optgroup key={reg.id} label={reg.label}>
+                    {THAILAND_PROVINCES.filter(p => p.region === reg.id).map(p => (
+                      <option key={p.id} value={p.nameTh}>{p.nameTh}</option>
+                    ))}
+                  </optgroup>
                 ))}
-                <option value="อื่นๆ">อื่นๆ</option>
               </select>
             </div>
 

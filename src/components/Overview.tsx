@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Member, SheetConfig } from '../types/member';
+import { Member, SheetConfig, ActiveTab } from '../types/member';
 import { AssociationLogo } from './AssociationLogo';
 import { 
   Users, 
@@ -34,7 +34,7 @@ import {
 interface OverviewProps {
   members: Member[];
   sheetConfig: SheetConfig;
-  onNavigate: (tab: 'overview' | 'register' | 'manage' | 'reports') => void;
+  onNavigate: (tab: ActiveTab) => void;
   onSelectMember: (member: Member) => void;
   onApproveMember: (memberId: string) => void;
   onManualSync: () => void;
@@ -214,6 +214,14 @@ export const Overview: React.FC<OverviewProps> = ({
               >
                 <UserPlus className="w-4 h-4 text-emerald-300" />
                 <span>{isAdmin ? 'รับสมัครสมาชิกใหม่' : 'สมัครสมาชิกสมาคมฯ'}</span>
+              </button>
+
+              <button
+                onClick={() => onNavigate('map')}
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-900/80 hover:bg-emerald-800 border border-emerald-500/40 text-emerald-200 hover:text-white font-medium text-sm transition-all"
+              >
+                <MapPin className="w-4 h-4 text-emerald-400" />
+                <span>แผนที่ประเทศไทย</span>
               </button>
 
               {isAdmin ? (
@@ -663,6 +671,18 @@ export const Overview: React.FC<OverviewProps> = ({
                   </span>
                 ))}
               </div>
+            </div>
+
+            {/* Quick Link to Thailand Map */}
+            <div className="pt-2">
+              <button
+                onClick={() => onNavigate('map')}
+                className="w-full py-2.5 px-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs flex items-center justify-center gap-1.5 shadow-xs transition-all active:scale-98"
+              >
+                <MapPin className="w-3.5 h-3.5 text-emerald-300" />
+                <span>เปิดดูแผนที่ประเทศไทยและการกระจายตัวของสมาชิก</span>
+                <ChevronRight className="w-3.5 h-3.5 text-emerald-300" />
+              </button>
             </div>
           </div>
 

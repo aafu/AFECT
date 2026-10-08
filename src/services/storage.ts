@@ -148,6 +148,180 @@ export const INITIAL_MEMBERS: Member[] = [
     lineId: '',
     skills: 'สมุนไพรพื้นบ้านชาวเขา, การจักสานเครื่องใช้ไม้ไผ่, พิธีกรรมโล้ชิงช้า (แย้ขู่อ่าเผ่ว)',
     notes: 'สมัครสมาชิกเพื่อร่วมถ่ายทอดองค์ความรู้สมุนไพรแก่เยาวชน'
+  },
+  {
+    id: 'AKHA-2026-0006',
+    registeredDate: '2026-03-12',
+    memberType: 'ถาวร',
+    status: 'อนุมัติแล้ว',
+    fullName: 'นาย สุรชัย อาหมี่',
+    photoUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&h=533&q=80',
+    gender: 'ชาย',
+    birthDate: '1988-06-19',
+    age: 37,
+    idCard: '5500100432190',
+    education: 'ปริญญาตรี',
+    occupation: 'ผู้ประกอบการแปรรูปผลไม้เมืองหนาว',
+    position: 'กรรมการฝ่ายส่งเสริมอาชีพเครือข่ายเชียงใหม่',
+    village: 'บ้านห้วยศาลา (หมู่ 8)',
+    houseNo: '56',
+    soi: '',
+    road: 'สายฝาง-แม่อาย',
+    subdistrict: 'แม่อาย',
+    district: 'แม่อาย',
+    province: 'เชียงใหม่',
+    postalCode: '50280',
+    phone: '082-341-9988',
+    email: 'surachai.armi@chiangmai-akha.org',
+    facebook: 'Surachai Armi Northern Farmer',
+    lineId: 'armi_cm',
+    skills: 'กาแฟพิเศษและการแปรรูปผลไม้, การจัดตั้งกลุ่มวิสาหกิจเพื่อสังคม, การท่องเที่ยวเชิงวัฒนธรรม',
+    notes: 'เครือข่ายสมาคมอ่าข่าโซนเชียงใหม่ตอนบน'
+  },
+  {
+    id: 'AKHA-2026-0007',
+    registeredDate: '2026-03-15',
+    memberType: 'รายปี',
+    status: 'อนุมัติแล้ว',
+    fullName: 'นางสาว มยุรี เบียะปา',
+    photoUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=533&q=80',
+    gender: 'หญิง',
+    birthDate: '1992-09-08',
+    age: 33,
+    idCard: '5580200331122',
+    education: 'ปริญญาตรี',
+    occupation: 'ครูภูมิปัญญาสมุนไพรและผ้าทอ',
+    position: 'วิทยากรศูนย์เรียนรู้วัฒนธรรมปาย',
+    village: 'บ้านหมอกจำแป่ (หมู่ 1)',
+    houseNo: '23/4',
+    soi: 'ซอยริมธาร',
+    road: 'สายปาย-แม่ฮ่องสอน',
+    subdistrict: 'หมอกจำแป่',
+    district: 'เมืองแม่ฮ่องสอน',
+    province: 'แม่ฮ่องสอน',
+    postalCode: '58000',
+    phone: '084-556-7812',
+    email: 'mayuree.beapa@mhs-culture.org',
+    facebook: 'Mayuree Beapa Crafts',
+    lineId: 'mayuree_craft',
+    skills: 'การย้อมผ้าด้วยสีธรรมชาติ, หัตถกรรมเครื่องเงิน, การบันทึกภาษาอ่าข่าอักษรไทย',
+    notes: 'ร่วมมือกับโรงเรียนในพื้นที่จัดหลักสูตรท้องถิ่น'
+  },
+  {
+    id: 'AKHA-2026-0008',
+    registeredDate: '2026-03-18',
+    memberType: 'ถาวร',
+    status: 'อนุมัติแล้ว',
+    fullName: 'นาย ชัยพร มาเยอะ',
+    photoUrl: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&h=533&q=80',
+    gender: 'ชาย',
+    birthDate: '1981-12-03',
+    age: 44,
+    idCard: '5560100776655',
+    education: 'ปริญญาโท',
+    occupation: 'นักวิชาการพัฒนาชุมชน',
+    position: 'ที่ปรึกษากลุ่มสัจจะออมทรัพย์',
+    village: 'บ้านห้วยตาด (หมู่ 6)',
+    houseNo: '109',
+    soi: '',
+    road: 'พะเยา-ป่าแดด',
+    subdistrict: 'ดงเจน',
+    district: 'ภูกามยาว',
+    province: 'พะเยา',
+    postalCode: '56000',
+    phone: '081-889-4455',
+    email: 'chaiporn.maye@phayao-community.org',
+    facebook: 'Chaiporn Maye Phayao Network',
+    lineId: 'chaiporn_py',
+    skills: 'การจัดทำผังชุมชน, สิทธิมนุษยชนและชนกลุ่มน้อย, การตลาดดิจิทัลสินค้าหัตถกรรม',
+    notes: 'ผู้ประสานงานความร่วมมือกับมหาวิทยาลัยพะเยา'
+  },
+  {
+    id: 'AKHA-2026-0009',
+    registeredDate: '2026-03-20',
+    memberType: 'รายปี',
+    status: 'อนุมัติแล้ว',
+    fullName: 'นาย ปรัชญา อาจือ',
+    photoUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=533&q=80',
+    gender: 'ชาย',
+    birthDate: '1995-04-17',
+    age: 31,
+    idCard: '1100200334455',
+    education: 'ปริญญาตรี',
+    occupation: 'วิศวกรซอฟต์แวร์ / ผู้ประกอบการเทคโนโลยี',
+    position: 'เลขาธิการชมรมเยาวชนอ่าข่าในกรุงเทพฯ',
+    village: 'คอนโดลุมพินีวิลล์ อ่อนนุช-ลาดกระบัง',
+    houseNo: '88/142',
+    soi: 'ลาดกระบัง 24/1',
+    road: 'ลาดกระบัง',
+    subdistrict: 'ลาดกระบัง',
+    district: 'ลาดกระบัง',
+    province: 'กรุงเทพมหานคร',
+    postalCode: '10520',
+    phone: '092-445-1200',
+    email: 'pratchaya.arju@tech-akha.dev',
+    facebook: 'Pratchaya Arju Tech',
+    lineId: 'pratchaya_dev',
+    skills: 'การพัฒนาเว็บไซต์และแอปพลิเคชัน, การสอนเทคโนโลยีดิจิทัลแก่ชุมชน, การประสานงานเครือข่าย',
+    notes: 'ดูแลระบบฐานข้อมูลและเทคโนโลยีการสื่อสารของสมาคม'
+  },
+  {
+    id: 'AKHA-2026-0010',
+    registeredDate: '2026-03-22',
+    memberType: 'รายปี',
+    status: 'อนุมัติแล้ว',
+    fullName: 'นางสาว ชลธิชา อาแหวะ',
+    photoUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=533&q=80',
+    gender: 'หญิง',
+    birthDate: '1998-10-25',
+    age: 27,
+    idCard: '5630300123987',
+    education: 'ปริญญาตรี',
+    occupation: 'นักการตลาดเกษตรอินทรีย์ / ผู้จัดการสหกรณ์',
+    position: 'ผู้ประสานงานเครือข่ายเกษตรกรรุ่นใหม่ภาคตะวันตก',
+    village: 'บ้านห้วยน้ำนัก (หมู่ 5)',
+    houseNo: '72/1',
+    soi: '',
+    road: 'สายแม่สอด-อุ้มผาง',
+    subdistrict: 'พบพระ',
+    district: 'พบพระ',
+    province: 'ตาก',
+    postalCode: '63160',
+    phone: '086-112-9900',
+    email: 'chonticha.arwae@tak-organic.org',
+    facebook: 'Chonticha Arwae Tak Farm',
+    lineId: 'chonticha_tak',
+    skills: 'การจัดการห่วงโซ่อุปทานเกษตร, การรับรองมาตรฐานเกษตรอินทรีย์, ภาษาอังกฤษและการสื่อสาร',
+    notes: 'เชื่อมโยงผลผลิตกาแฟและอะโวคาโดจากยอดดอยสู่ตลาดพรีเมียม'
+  },
+  {
+    id: 'AKHA-2026-0011',
+    registeredDate: '2026-03-25',
+    memberType: 'รายปี',
+    status: 'รอการอนุมัติ',
+    fullName: 'นาย ธนกฤต ลาหู่เชอมือ',
+    photoUrl: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&h=533&q=80',
+    gender: 'ชาย',
+    birthDate: '1983-08-11',
+    age: 42,
+    idCard: '5520100889922',
+    education: 'ปริญญาตรี',
+    occupation: 'ช่างศิลป์หัตถกรรมดินเผาและเซรามิก',
+    position: 'วิทยากรการออกแบบลวดลายชาติพันธุ์ร่วมสมัย',
+    village: 'บ้านศาลาดงลาน (หมู่ 2)',
+    houseNo: '34',
+    soi: 'ซอยช่างปั้น',
+    road: 'พหลโยธิน',
+    subdistrict: 'ศาลา',
+    district: 'เกาะคา',
+    province: 'ลำปาง',
+    postalCode: '52130',
+    phone: '085-334-1122',
+    email: 'thanakrit.ceramik@lampang-art.org',
+    facebook: 'Thanakrit Ceramic Art Akha',
+    lineId: 'thanakrit_lp',
+    skills: 'เซรามิกศิลาดล, การออกแบบอัตลักษณ์ชาติพันธุ์บนภาชนะ, การถ่ายทอดศิลปะแก่เยาวชน',
+    notes: 'ขอเข้าร่วมเป็นสมาชิกเพื่อจัดนิทรรศการศิลปะร่วมสมัยอ่าข่าสัญจร'
   }
 ];
 
@@ -158,7 +332,21 @@ export function getStoredMembers(): Member[] {
       localStorage.setItem(LOCAL_STORAGE_MEMBERS_KEY, JSON.stringify(INITIAL_MEMBERS));
       return INITIAL_MEMBERS;
     }
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed)) {
+      // If user had previous 5 members, seamlessly merge new province sample members
+      if (parsed.length > 0 && parsed.length < INITIAL_MEMBERS.length) {
+        const existingIds = new Set(parsed.map((m: any) => m.id));
+        const newItemsToAdd = INITIAL_MEMBERS.filter(m => !existingIds.has(m.id));
+        if (newItemsToAdd.length > 0) {
+          const merged = [...parsed, ...newItemsToAdd];
+          localStorage.setItem(LOCAL_STORAGE_MEMBERS_KEY, JSON.stringify(merged));
+          return merged;
+        }
+      }
+      return parsed;
+    }
+    return INITIAL_MEMBERS;
   } catch (e) {
     console.error('Error reading stored members:', e);
     return INITIAL_MEMBERS;

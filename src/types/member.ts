@@ -53,4 +53,4 @@ export interface SheetConfig {
   autoSync: boolean;
 }
 
-export type ActiveTab = 'overview' | 'register' | 'manage' | 'reports';
+export type ActiveTab = 'overview' | 'register' | 'manage' | 'reports' | 'map';

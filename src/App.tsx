@@ -32,6 +32,7 @@ import {
 import { Header } from './components/Header';
 import { AssociationLogo } from './components/AssociationLogo';
 import { Overview } from './components/Overview';
+import { ThailandMemberMap } from './components/ThailandMemberMap';
 import { RegistrationForm } from './components/RegistrationForm';
 import { MemberManagement } from './components/MemberManagement';
 import { Reports } from './components/Reports';
@@ -452,6 +453,16 @@ export default function App() {
             onLogin={handleGoogleLogin}
             isAdmin={isAdmin}
             onOpenAdminLogin={() => setAdminLoginModalOpen(true)}
+          />
+        )}
+
+        {activeTab === 'map' && (
+          <ThailandMemberMap
+            members={members}
+            onSelectMember={(m) => setSelectedMemberForCard(m)}
+            onEditMember={(m) => setMemberToEdit(m)}
+            onNavigate={(tab) => setActiveTab(tab)}
+            isAdmin={isAdmin}
           />
         )}
 

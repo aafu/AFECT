@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Member, MemberType, MemberStatus, Gender } from '../types/member';
 import { calculateAge, compressImageTo2InchDataUrl } from '../services/storage';
+import { THAILAND_PROVINCES, THAILAND_REGIONS } from '../data/thailandProvinces';
 import { AssociationLogo } from './AssociationLogo';
 import { X, Save, Edit3, AlertCircle, Camera, Upload, Trash2, RefreshCw } from 'lucide-react';
 
@@ -355,12 +356,19 @@ export const EditMemberModal: React.FC<EditMemberModalProps> = ({
               {/* Province */}
               <div>
                 <label className="block text-xs font-semibold text-slate-700 mb-1">จังหวัด</label>
-                <input
-                  type="text"
+                <select
                   value={formData.province}
                   onChange={(e) => handleChange('province', e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs text-slate-900"
-                />
+                  className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs text-slate-900 bg-white"
+                >
+                  {THAILAND_REGIONS.map((reg) => (
+                    <optgroup key={reg.id} label={reg.label}>
+                      {THAILAND_PROVINCES.filter(p => p.region === reg.id).map(p => (
+                        <option key={p.id} value={p.nameTh}>{p.nameTh}</option>
+                      ))}
+                    </optgroup>
+                  ))}
+                </select>
               </div>
 
               {/* Email */}

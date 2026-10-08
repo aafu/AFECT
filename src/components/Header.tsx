@@ -17,7 +17,8 @@ import {
   SlidersHorizontal,
   Lock,
   ShieldCheck,
-  Shield
+  Shield,
+  MapPin
 } from 'lucide-react';
 import { User } from 'firebase/auth';
 
@@ -58,12 +59,14 @@ export const Header: React.FC<HeaderProps> = ({
   const navItems = isAdmin
     ? [
         { id: 'overview' as ActiveTab, label: 'ภาพรวมระบบ', icon: Users },
+        { id: 'map' as ActiveTab, label: 'แผนที่ประเทศไทย', icon: MapPin },
         { id: 'register' as ActiveTab, label: 'รับสมัครสมาชิก', icon: UserPlus },
         { id: 'manage' as ActiveTab, label: 'จัดการสมาชิก', icon: SlidersHorizontal },
         { id: 'reports' as ActiveTab, label: 'รายงานสถิติ', icon: BarChart3 },
       ]
     : [
         { id: 'overview' as ActiveTab, label: 'ภาพรวมสมาคม', icon: Users },
+        { id: 'map' as ActiveTab, label: 'แผนที่ประเทศไทย', icon: MapPin },
         { id: 'register' as ActiveTab, label: 'สมัครสมาชิก', icon: UserPlus },
       ];
 
